@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import femaleProfile from './images/femaleProfile'
+import maleProfile from './images/maleProfile'
 
 const Employees = () => {
 
