@@ -4,6 +4,8 @@ import maleProfile from '../images/maleProfile.jpg'
 
 const Employees = () => {
 
+  const [selectTeam, setTeam] = useState("TeamB");
+
   const [employees, setEmployees] = useState([{
       id: 1,
       fullName: "Bob Jones",
@@ -91,6 +93,16 @@ const Employees = () => {
 
   return (
     <main className="container">
+      <div class="row justify-content-center mt-3 mb-3">
+        <div class ="col-6">
+          <select className="form-select form-select-lg">
+            <option vaue="TeamA">TeamA</option>
+            <option vaue="TeamB">TeamB</option>
+            <option vaue="TeamC">TeamC</option>
+            <option vaue="TeamD">TeamD</option>
+          </select>
+        </div>
+      </div>
       <div class="row justify-content-center mt-3 mb-3">
         <div class ="col-8">
           <div class="card-collection">
