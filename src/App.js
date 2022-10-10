@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer'
@@ -92,6 +92,18 @@ function App() {
       gender: "male",
       teamName: "TeamD"
     }]);
+
+    useEffect(() => {
+
+      localStorage.setItem('employeeList', JSON.stringify(employees));
+
+    },[employees]);
+
+    useEffect(() => {
+
+      localStorage.setItem('selectedTeam', JSON.stringify(selectedTeam));
+
+    },[selectedTeam]);
 
   function handleTeamSelectionChange(event) {
     setTeam(event.target.value);
