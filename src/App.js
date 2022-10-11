@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer'
 import Employees from './components/Employees'
 import GroupedTeamMembers from './components/GroupedTeamMembers';
+import Nav from './components/Nav';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -121,6 +122,7 @@ function App() {
 
   return (
     <Router>
+      <Nav />
       <Header selectedTeam={selectedTeam}
               teamMemberCount={employees.filter((employee) => employee.teamName === selectedTeam).length}
       />
