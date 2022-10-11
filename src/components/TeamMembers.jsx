@@ -1,9 +1,9 @@
 import TeamMemberCard from "./TeamMemberCard";
 
-const TeamMembers = ({ employees, handdleEmployeecardClick, selectedTeam }) => {
+const TeamMembers = ({ employees, handleEmployeeCardClick, selectedTeam }) => {
   return (
     employees.map((employee) => (
-      <TeamMemberCard employee={employee} handdleEmployeecardClick = {handdleEmployeecardClick} selectedTeam = {selectedTeam} />
+      <TeamMemberCard employee={employee} handleEmployeeCardClick = {handleEmployeeCardClick} selectedTeam = {selectedTeam} />
     ))
   )
 }
