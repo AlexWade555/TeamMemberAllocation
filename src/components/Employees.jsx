@@ -1,3 +1,4 @@
+import Teams from '../components/Teams';
 import femaleProfile from '../images/femaleProfile.jpg'
 import maleProfile from '../images/maleProfile.jpg'
 
@@ -7,12 +8,8 @@ const Employees = ({employees,selectedTeam,handleEmployeeCardClick,handleTeamSel
     <main className="container">
       <div className="row justify-content-center mt-3 mb-3">
         <div className ="col-6">
-          <select className="form-select form-select-lg" value={selectedTeam} onChange={handleTeamSelectionChange}>
-            <option vaue="TeamA">TeamA</option>
-            <option vaue="TeamB">TeamB</option>
-            <option vaue="TeamC">TeamC</option>
-            <option vaue="TeamD">TeamD</option>
-          </select>
+          <Teams selectedTeam = {selectedTeam}
+                  handleTeamSelectionChange = {handleTeamSelectionChange}/>
         </div>
       </div>
       <div className="row justify-content-center mt-3 mb-3">
